@@ -1,0 +1,43 @@
+<resources>
+    <string name="app_name">eWalle</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="nav_header_title">Carol Black</string>
+    <string name="nav_header_subtitle">Seattle, Washington</string>
+    <string name="nav_header_desc">Navigation header</string>
+    <string name="action_settings">Settings</string>
+
+    <string name="subtitle">Open An Account For Digital E-Wallet Solutions.Instant Payouts.\n\nJoin For Free.</string>
+    <string name="sign_in">Sign in</string>
+    <string name="create_acc">Create an account</string>
+    <string name="current_time_and_date">%1$s|%2$s</string>
+
+    <string name="title">eWalle</string>
+    <string name="account_overview">Account Overview</string>
+    <string name="curr_balance">Current balance</string>
+    <string name="send_money">Send Money</string>
+    <string name="receive_money">Receive Money</string>
+    <string name="mobile_prepaid">Mobile Prepaid</string>
+    <string name="electricity_bill">Electricity Bill</string>
+    <string name="movie_tickets">Movie Tickets</string>
+    <string name="cashback_offer">Cashback Offer</string>
+    <string name="more_options">More Options</string>
+    <string name="flight_tick">Flight Tickets</string>
+    <string name="services">Services</string>
+    <string name="balance">20,600</string>
+
+    <string name="menu_home">Home</string>
+    <string name="menu_profile">Profile</string>
+    <string name="menu_accounts">Accounts</string>
+    <string name="menu_transactions">Transactions</string>
+    <string name="menu_stats">Stats</string>
+    <string name="menu_settings">Settings</string>
+    <string name="menu_help">Help</string>
+    <string name="login">Login</string>
+    <string name="logout">Logout</string>
+    <string name="app_ver">Version 2.0.1</string>
+    <string name="contact_mike">Mike</string>
+    <string name="contact_joshpeh">Joshpeh</string>
+    <string name="contact_ashley">Ashley</string>
+    <string name="contact_maya">Maya</string>
+</resources>

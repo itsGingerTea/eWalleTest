@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+    <color name="brand_orange">#FFAC30</color>
+    <color name="brand_grey">#F1F3F6</color>
+    <color name="brand_dark_blue">#3A4276</color>
+    <color name="brand_dark_blue_transparent">#333A4276</color>
+    <color name="brand_black">#1B1D28</color>
+    <color name="text_dark_grey">#7B7F9E</color>
+    <color name="text_black">#1B1D28</color>
+    <color name="brand_night_grey">#212330</color>
+    <color name="brand_night_black">#171822</color>
+</resources>
