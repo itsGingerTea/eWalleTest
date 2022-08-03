@@ -23,7 +23,7 @@
 
     <style name="ToolbarTitleStyle" parent="">
         <item name="android:textFontWeight">500</item>
-        <item name="android:textSize">25sp</item>
+        <item name="android:textSize">23sp</item>
         <item name="fontFamily">@font/ubuntu</item>
         <item name="android:textColor">?attr/colorOnPrimary</item>
     </style>

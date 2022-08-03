@@ -1,0 +1,185 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/tv_acc_overview"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="24dp"
+        android:textAlignment="textStart"
+        android:textSize="13sp"
+        android:textFontWeight="1000"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        android:textAppearance="@style/TextHomeTitleStyle"
+        android:text="@string/account_overview"
+        />
+
+    <androidx.appcompat.widget.LinearLayoutCompat
+        android:id="@+id/cont_wallet"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="20dp"
+        android:background="@drawable/bg_home_cont"
+        android:orientation="horizontal"
+        android:padding="20dp"
+        app:layout_constraintEnd_toEndOf="@id/tv_acc_overview"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="@id/tv_acc_overview"
+        app:layout_constraintTop_toBottomOf="@id/tv_acc_overview">
+
+        <androidx.appcompat.widget.LinearLayoutCompat
+            android:id="@+id/cont_balance"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:paddingStart="0dp"
+            android:paddingEnd="96dp">
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/tv_balance"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp"
+                android:textAppearance="@style/ToolbarTitleStyle"
+                android:textSize="20sp"
+                tools:text="@string/balance" />
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/tv_title_curr_balance"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/curr_balance"
+                android:textSize="13sp"
+                android:textAppearance="@style/TextHomeSubtitleStyle" />
+
+        </androidx.appcompat.widget.LinearLayoutCompat>
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/btn_plus_wallet"
+            style="@style/plusButtonStyle"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_gravity="center_vertical|end"
+            android:insetLeft="0dp"
+            android:insetTop="0dp"
+            android:insetRight="0dp"
+            android:insetBottom="0dp"
+            app:cornerRadius="50dp"
+            app:icon="@drawable/ic_baseline_add_24"
+            app:iconGravity="textStart"
+            app:iconPadding="0dp"
+            app:iconSize="20dp" />
+
+    </androidx.appcompat.widget.LinearLayoutCompat>
+
+    <TextView
+        android:id="@+id/tv_send_money"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="28dp"
+        android:layout_marginBottom="16dp"
+        android:textAlignment="textStart"
+        android:textSize="13sp"
+        android:textFontWeight="1000"
+        app:layout_constraintTop_toBottomOf="@id/cont_wallet"
+        app:layout_constraintStart_toStartOf="@id/tv_acc_overview"
+        app:layout_constraintBottom_toTopOf="@id/cont_rv"
+        android:textAppearance="@style/TextHomeTitleStyle"
+        android:text="@string/send_money" />
+
+    <androidx.appcompat.widget.AppCompatImageView
+        android:id="@+id/btn_qr_code"
+        android:layout_width="24dp"
+        android:layout_height="24dp"
+        app:srcCompat="@drawable/qr_code_img"
+        android:layout_gravity="center"
+        android:tint="?attr/colorOnSecondary"
+        app:layout_constraintEnd_toEndOf="@id/cont_wallet"
+        app:layout_constraintTop_toTopOf="@id/tv_send_money"
+        app:layout_constraintBottom_toBottomOf="@id/tv_send_money"/>
+
+    <androidx.appcompat.widget.LinearLayoutCompat
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/cont_rv"
+        android:orientation="horizontal"
+        app:layout_constraintStart_toStartOf="@id/tv_send_money"
+        app:layout_constraintTop_toBottomOf="@id/cont_wallet"
+        app:layout_constraintBottom_toTopOf="@id/tv_services"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="16dp">
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/btn_plus_contacts"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:insetLeft="0dp"
+            android:insetTop="0dp"
+            android:insetRight="0dp"
+            android:insetBottom="0dp"
+            android:background="@drawable/bg_circle_button"
+            app:cornerRadius="50dp"
+            app:icon="@drawable/ic_baseline_add_24"
+            app:iconGravity="textStart"
+            app:iconPadding="0dp"
+            app:iconSize="20dp"
+            android:layout_gravity="center" />
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/rv_contacts"
+            android:orientation="horizontal"
+            android:layout_marginStart="12dp"
+            app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+            tools:listitem="@layout/rv_item_contacts"/>
+
+    </androidx.appcompat.widget.LinearLayoutCompat>
+
+    <TextView
+        android:id="@+id/tv_services"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="28dp"
+        android:textAlignment="textStart"
+        android:textSize="13sp"
+        android:textFontWeight="1000"
+        app:layout_constraintBottom_toTopOf="@id/rv_services"
+        app:layout_constraintStart_toStartOf="@id/tv_acc_overview"
+        android:textAppearance="@style/TextHomeTitleStyle"
+        android:text="@string/services" />
+
+    <androidx.appcompat.widget.AppCompatImageView
+        android:id="@+id/btn_services"
+        android:layout_width="24dp"
+        android:layout_height="24dp"
+        app:srcCompat="@drawable/services"
+        android:layout_gravity="center"
+        android:tint="?attr/colorOnSecondary"
+        app:layout_constraintEnd_toEndOf="@id/cont_wallet"
+        app:layout_constraintTop_toTopOf="@id/tv_services"
+        app:layout_constraintBottom_toBottomOf="@id/tv_services"/>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:layout_width="match_parent"
+        android:layout_height="164dp"
+        android:id="@+id/rv_services"
+        app:layout_constraintStart_toStartOf="@id/tv_services"
+        app:layout_constraintEnd_toEndOf="@id/btn_services"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:orientation="horizontal"
+        android:layout_marginVertical="16dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="20dp"
+        tools:listitem="@layout/rv_item_services"
+        app:layoutManager="androidx.recyclerview.widget.GridLayoutManager"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
